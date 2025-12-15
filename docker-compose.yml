@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  emsx:
+    image: emsx-app
+    container_name: emsx
+    ports:
+      - "9090:9090"
+    env_file:
+      - .env
